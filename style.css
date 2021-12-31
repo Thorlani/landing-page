@@ -526,7 +526,7 @@ footer .last-list ul li .las:hover {
         /* background: lightskyblue; */
         width: 418px;
         height: 425px;
-        margin-top: -16rem;
+        margin-top: -18rem;
         padding-left: 2.5rem;
         padding-right: 2.5rem;
         text-align: center;
@@ -551,9 +551,10 @@ footer .last-list ul li .las:hover {
     main .intro .right {
         width: 100%;
         float: left;
-        /* background: #d3d3d3; */
+        /* background: #6d1616; */
         position: relative;
         z-index: 1;
+        padding-left: 9.9rem;
         margin-top: -.35rem;
     }
     
