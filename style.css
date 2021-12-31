@@ -1,0 +1,666 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.7fr 3fr 2fr 1.2fr 2.4fr .8fr;
+    grid-template-areas: 
+    "nav"
+    "main"
+    "content1"
+    "content2"
+    "footer"
+    "attribution"
+    ;
+}
+
+nav {
+    /* background: indianred; */
+    grid-area: nav;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+nav .brand-title {
+    margin-left: 12rem;
+}
+
+nav .toggle-button {
+    position: absolute;
+    top: 2rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+nav .toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: #222222;
+    border-radius: 10px;
+}
+
+nav .navbar-links ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10rem;
+}
+
+nav .navbar-links ul li {
+    list-style: none;
+    margin-left: 2rem;
+}
+
+.navbar-links li a {
+    /* font-family: $primarTexxt; */
+    font-weight: 400;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #79777a;
+}
+
+.navbar-links li .active {
+    /* font-family: $primarTexxt; */
+    text-transform: uppercase;
+    color: black;
+    border: 3px solid black;
+    padding: .7rem 1.5rem;
+}
+
+nav .navbar-links ul li .active:hover {
+    background-color: black;
+    color: #ffffff;
+}
+
+
+
+main {
+    /* background: lawngreen; */
+    grid-area: main;
+    background-color: #2c2640;
+    height: 600px;
+}
+
+main .introdirection {
+    /* // background-color: red; */
+    position: relative;
+    z-index: 300;
+}
+
+main .intro {
+    /* // background-color: saddlebrown; */
+    top: -55rem;
+    /* display: flex;
+    justify-content: center; */
+    padding-top: 4rem;
+    /* padding-right: 5.5rem; */
+    position: relative;
+    z-index: 100;
+}
+
+main .introdirection .intro-right {
+    display: flex;
+    justify-content: end;
+    height: 500px;
+    object-fit: contain;
+}
+
+main .introdirection .intro-left {
+    margin-top: -4rem;
+    display: flex;
+    justify-content: start;
+    height: 450px;
+    object-fit: contain;
+}
+
+main .intro .left {
+    /* background-color: aqua; */
+            /* margin-left: 7.5rem; */
+            height: 500px;
+            float: left;
+            width: 50%;
+            padding-top: 1.5rem;
+            padding-left: 12rem;
+            color: #ffffff;
+}
+
+main .intro .right {
+    /* background: lightcoral; */
+    height: 500px;
+    float: right;
+    width: 50%;
+    padding-left: 10rem;
+    padding-top: 1.5rem;
+}
+
+main .intro .right img {
+    width: 540px;
+    height: 650px;
+}
+
+main .intro .left hr {
+    background-color: #ffffff;
+    width: 180px;
+    /* margin-right: -8rem; */
+}
+
+main .intro .left .text {
+    margin-top: 4rem;
+}
+
+main .intro .left h1 {
+    /* // background-color: brown; */
+    /* font-family: $primaryText; */
+    /* background: rosybrown; */
+    font-weight: 700;
+    font-size: 4rem;
+    word-wrap: break-word;
+    line-height: 60px;
+    /* margin-right: 12rem; */
+    padding-right: 2rem;
+}
+
+main .intro .left p {
+     /* background-color: brown; */
+                    word-wrap: break-word;
+                    margin-top: 2rem;
+                    margin-bottom: 2.5rem;
+                    margin-right: 10rem;
+                    padding-right: 2rem;
+                    /* font-family: $primarTexxt; */
+                    font-size: 14px;
+                    /* // letter-spacing: 1px; */
+                    line-height: 24px;
+                    word-spacing: 4px;
+}
+
+main .intro .left .view a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #ffffff;
+    cursor: pointer;
+    /* background: black; */
+                    margin-top: 4rem;
+                    border: 3px solid #ffffff;
+                    width: 20%;
+                    padding: .5rem 1rem;
+}
+
+main .intro .left a::after {
+    content: "";
+    background-color: #ffffff;
+                    cursor: pointer;
+                    color: black;
+}
+
+.content1 {
+    /* background: lightslategray; */
+    grid-area: content1;
+    margin-top: 10rem;
+        padding: 4rem 0;
+        padding: 0 12.5rem;
+        position: relative;
+}
+
+.content1 hr {
+    background-color: #ffffff;
+            width: 180px;
+            margin-right: -8rem;
+}
+
+.content1 h3 {
+    margin: 3rem 0;
+            /* font-family: $primaryText; */
+            color: #2c2930;
+            font-size: 60px;
+}
+
+.content1 ul {
+    display: flex;
+            justify-content: center;
+            margin-left: -2rem;
+}
+
+.content1 ul li {
+    list-style: none;
+                margin-left: 2rem;
+}
+
+.content1 ul li .title {
+    margin: 2rem 0;
+                    /* font-weight: $primaryText; */
+                    color: #363439;
+                    font-size: 30px;
+                    font-weight: 600;
+}
+
+.content1 ul li .tot {
+    color: #97979c;
+                    font-size: 16px;
+                    line-height: 24px;
+}
+
+.content2 {
+    /* background: maroon; */
+    grid-area: content2;
+    color: #ffffff;
+        height: 234px;
+        margin-top: 16rem;
+}
+
+.content2 .find-more {
+    position: relative;
+            z-index: 400;
+            margin-bottom: -12rem;
+}
+
+.content2 .find-more .find {
+    display: flex;
+                justify-content: space-around;
+                width: 100%;
+}
+
+.content2 .find-more .findd {
+    padding-right: 13rem;
+                    word-wrap: break-word;
+                    /* font-family: $primaryText; */
+                    font-size: 50px;
+                    font-weight: 600;
+                    width: 50%;
+}
+
+.content2 .find-more .how p {
+    font-weight: 400;
+                    font-size: 18px;
+                    text-transform: uppercase;
+                    border: 2px solid #ffffff;
+                    padding: .5rem 0;
+                    padding-left: 1rem;
+                    padding-right: 1rem;
+                    margin: 3rem 0;
+                    margin-left: 12rem;
+                    margin-right: 4rem;
+}
+
+.content2 .find-more .how p:hover {
+    background-color: #ffffff;
+                    cursor: pointer;
+                    color: black;
+}
+
+.content2 .wav {
+    background-color: #2c2640;
+            position: relative;
+            z-index: 100;
+            display: flex;
+            justify-content: end;
+            margin-top: -2.5rem;
+}
+
+footer {
+    /* background: rgb(68, 41, 136); */
+    background-color: #fafafa;
+    grid-area: footer;
+}
+
+footer .last-wave {
+    position: relative;
+            z-index: 20;
+}
+
+footer .last-cont {
+    position: relative;
+            z-index: 30;
+            margin: -10rem 0;
+            padding-left: 12rem;
+            padding-right: 12rem;
+}
+
+footer .last-cont .last {
+    display: flex;
+                justify-content: space-between;
+}
+
+footer .last-cont .last .media .boo {
+    padding-left: .5rem;
+}
+
+footer .last-list {
+    margin-right: 10rem;
+}
+
+footer .last-list ul {
+    display: flex;
+                    justify-content: space-between;
+}
+
+footer .last-list ul li {
+    list-style: none;
+}
+
+footer .last-list ul li h5 {
+    margin-top: 3rem;
+                            font-size: 20px;
+                            font-weight: lighter;
+                            /* font-family: $primarTexxt; */
+                            color: #77767b;
+}
+
+footer .last-list ul li .las {
+    margin-top: 2rem;
+                            color: #28272d;
+                            /* font-family: $primarTexxt; */
+                            line-height: 18px;
+}
+
+footer .last-list ul li .las:hover {
+    text-decoration: underline;
+                            cursor: pointer;
+}
+
+.attribution {
+    /* background: brown; */
+    grid-area: attribution;
+    display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 12rem;
+        background-color: #fafafa;
+        font-size: medium;
+        /* font-family: $primaryText; */
+        word-spacing: 8px;
+}
+
+.attribution a {
+    text-decoration: none;
+            text-transform: uppercase;
+}
+
+@media (max-width: 475px) {
+    body {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    nav .brand-title {
+        margin-left: 1rem;
+    }
+
+    nav .toggle-button {
+        display: flex;
+    }
+
+    nav .navbar-links {
+        display: none;
+        width: 100%;
+        /* margin-top: 4rem; */
+    }
+
+    nav .navbar-links ul {
+        width: 100%;
+        flex-direction: column;
+        /* // background-color: saddlebrown; */
+        /* margin-left: 7rem;
+        padding-left: -3rem;
+        padding: .5rem 0; */
+    }
+
+    nav .navbar ul li {
+        cursor: pointer;
+        text-align: center;
+        /* // background-color: seagreen;
+        // padding-right: -2rem; */
+        /* padding: .5rem 0; */
+    }
+
+    nav .navbar ul li a {
+        /* // background-color: skyblue; */
+        /* margin-left: -4rem; */
+        padding: .5rem 1rem;
+    }
+
+    nav .navbar ul li .active {
+        /* // background-color: slateblue; */
+                            margin-left: -5rem;
+                            /* // padding-left: -3rem; */
+                            padding-right: -4rem;
+                            border: 2px solid black;
+                            /* // text-align: justify; */
+    }
+
+    .navbar-links.active {
+        display: flex;
+    }
+
+    main {
+        height: 1250px;
+    }
+
+    main .intro {
+        margin-top: -4rem;
+        /* margin-left: 6rem; */
+    }
+
+    main .intro .left, .right {
+        width: 100%;
+        padding: 0px;
+    }
+
+    main .intro .left {
+        /* background: brown; */
+        padding-left: -4rem;
+        position: relative;
+        z-index: 2;
+        width: 100%;
+        height: 450px;
+        top: 40rem;
+        /* padding-top: 10rem; */
+        margin-bottom: -60rem;
+    }
+
+    main .intro .left .text {
+        /* background: rgb(236, 215, 21); */
+        margin-right: 2rem;
+        text-align: center;
+    }
+
+    main .intro .left .text h1 {
+        /* background: lightpink; */
+        padding-left: 4rem;
+        padding-right: 16rem;
+        text-align: center;
+    }
+
+    main .intro .left .text p {
+        /* background: lightskyblue; */
+        padding-left: 4rem;
+        padding-right: 8rem;
+        font-size: 24px;
+        line-height: 32px;
+    }
+
+    main .intro .left .text .view {
+        /* background: lime; */
+        margin-top: 3rem;
+        margin-left: -14rem;
+    }
+
+    main .intro .right img {
+        margin-left: -9.8rem;
+        /* margin-right: -1.5rem; */
+        margin-top: -1.5rem;
+    }
+
+    main .intro .right {
+        width: 100%;
+        float: left;
+        background: #d3d3d3;
+        position: relative;
+        z-index: 1;
+        margin-top: -.35rem;
+    }
+    
+    main .intro .left hr {
+        display: none;
+    }
+
+    main .introdirection {
+        top: 25rem;
+    }
+
+    main .introdirection .intro-left {
+        top: 4rem;
+    }
+
+    .content1 {
+        text-align: center;
+        /* background: lightslategray; */
+        /* margin-top: 10rem; */
+            padding: 4rem 0;
+            /* padding: 0 12.5rem; */
+            /* position: relative; */
+    }
+
+    .content1 hr {
+        margin-left: 8rem;
+    }
+
+    .content1 h3 {
+        margin-left: -16.5rem;
+    }
+
+    .content1 ul {
+        /* background: #a14747; */
+        flex-direction: column;
+        margin-left: -18rem;
+    }
+
+    .content1 ul li img {
+        /* background-color: brown; */
+        margin-top: 1rem
+    }
+
+    .content1 ul li .tot {
+        /* background: firebrick; */
+        margin-left: 10rem;
+        margin-right: 11rem;
+        padding-right: 11rem;
+        padding-left: 12rem;
+    }
+
+    .content2 {
+        /* margin: 0 1.5rem; */
+        margin-top: -.5rem;
+        background: #2c2640;
+        height: 350px;
+        text-align: center;
+    }
+
+    .content2 .find {
+        position: relative;
+        z-index: 1;
+    }
+
+    .content2 .wav {
+        position: relative;
+        z-index: 2;
+        /* background: salmon; */
+        top: -16.8rem;
+    }
+
+    .content2 .find {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: -4rem;
+        /* background: crimson; */
+    }
+
+    .content2 .find-more .findd {
+        width: 100%;
+        padding-left: 3rem;
+        padding-right: 18rem;
+        padding-top: 2rem;
+        height: 300px;
+        /* background: cyan; */
+    }
+
+    .content2 .find-more .how {
+        border: none;
+    }
+
+    .content2 .find-more .how p {
+        /* background: #d3d3d3; */
+        /* height: 100px; */
+        margin-left: 28rem;
+        top: -6rem;
+        right: 19.5rem;
+        position: relative;
+        border: 3px solid white;
+    }
+
+    .content2 .find-more .how p:hover {
+        background: white;
+        color: black;
+    }
+
+    footer {
+        margin-top: 4rem;
+        height: 1110px;
+    }
+
+    footer .last-cont {
+        margin-right: 2rem;
+    }
+
+    footer .last-cont .last {
+        margin-left: -16rem;
+        display: flex;
+        flex-direction: column;
+        /* background: yellow; */
+        justify-content: center;
+        align-items: center;
+    }
+
+    footer .brand {
+        /* background-color: brown; */
+        margin-left: 2rem;
+    }
+
+    footer .media {
+        margin-top: 2rem;
+    }
+
+    footer .media .boo {
+        /* background-color: blueviolet; */
+        margin-left: 1rem;
+    }
+
+    footer hr {
+        margin-top: 2rem;
+        margin-left: -6rem;
+        width: 235px;
+    }
+
+    footer .last-list ul {
+        text-align: center;
+        flex-direction: column;
+        margin-left: -4rem;
+    }
+
+    .attribution {
+        margin-left: -16rem;
+    }
+
+
+}
