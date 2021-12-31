@@ -124,6 +124,14 @@ main .introdirection .intro-left {
     object-fit: contain;
 }
 
+main .introdirection .intro-right2 {
+    display: none;
+}
+
+main .introdirection .intro-left2 {
+    display: none;
+}
+
 main .intro .left {
     /* background-color: aqua; */
             /* margin-left: 7.5rem; */
@@ -308,6 +316,10 @@ main .intro .left a::after {
             margin-top: -2.5rem;
 }
 
+.content2 .wav .how-we-work1 {
+    display: none;
+}
+
 footer {
     /* background: rgb(68, 41, 136); */
     background-color: #fafafa;
@@ -387,12 +399,13 @@ footer .last-list ul li .las:hover {
             text-transform: uppercase;
 }
 
+
 @media (max-width: 475px) {
-    body {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
+    nav {
+        /* background-color: yellowgreen; */
+        width: 420px;
     }
+
     nav .brand-title {
         margin-left: 1rem;
     }
@@ -444,12 +457,21 @@ footer .last-list ul li .las:hover {
     }
 
     main {
-        height: 1250px;
+        height: 750px;
+        width: 418px;
+        margin-top: 16rem;
+    }
+
+    main .introdirection {
+        position: relative;
+        z-index: 1;
     }
 
     main .intro {
         margin-top: -4rem;
         /* margin-left: 6rem; */
+        position: relative;
+        z-index: 2;
     }
 
     main .intro .left, .right {
@@ -464,48 +486,62 @@ footer .last-list ul li .las:hover {
         z-index: 2;
         width: 100%;
         height: 450px;
-        top: 40rem;
+        top: 38rem;
         /* padding-top: 10rem; */
         margin-bottom: -60rem;
     }
 
     main .intro .left .text {
         /* background: rgb(236, 215, 21); */
-        margin-right: 2rem;
+        height: 425px;
+        margin-right: 0rem;
+        margin-top: 1rem;
         text-align: center;
     }
 
     main .intro .left .text h1 {
         /* background: lightpink; */
-        padding-left: 4rem;
-        padding-right: 16rem;
+        width: 418px;
+        height: 425px;
+        font-size: 3.5rem;
+        margin-left: .5rem;
+        margin-right: 2rem;
+        padding-top: .5rem;
+        padding-left: .8rem;
+        /* padding-right: 2rem; */
         text-align: center;
     }
 
     main .intro .left .text p {
         /* background: lightskyblue; */
-        padding-left: 4rem;
-        padding-right: 8rem;
-        font-size: 24px;
+        width: 418px;
+        height: 425px;
+        margin-top: -18rem;
+        padding-left: 2.5rem;
+        padding-right: 2.5rem;
+        text-align: center;
+        font-size: 18px;
         line-height: 32px;
     }
 
     main .intro .left .text .view {
         /* background: lime; */
-        margin-top: 3rem;
-        margin-left: -14rem;
+        margin-top: -16rem;
+        margin-left: 0rem;
     }
 
     main .intro .right img {
-        margin-left: -9.8rem;
+        margin-left: -9.9rem;
         /* margin-right: -1.5rem; */
-        margin-top: -1.5rem;
+        /* margin-top: -8rem; */
+        width: 415px;
+        object-fit: contain;
     }
 
     main .intro .right {
         width: 100%;
         float: left;
-        background: #d3d3d3;
+        /* background: #d3d3d3; */
         position: relative;
         z-index: 1;
         margin-top: -.35rem;
@@ -516,24 +552,54 @@ footer .last-list ul li .las:hover {
     }
 
     main .introdirection {
-        top: 25rem;
+        top: 8rem;
+        /* background: crimson; */
     }
 
     main .introdirection .intro-left {
-        top: 4rem;
+        /* background: chartreuse; */
+        height: 300px;
+        position: relative;
+        z-index: 1;
+        top: -14rem;
+    }
+    main .introdirection .intro-right {
+        /* background: chocolate; */
+        height: 300px;
+        position: relative;
+        z-index: 2;
+        top: 26rem;
+    }
+
+    main .introdirection .intro-right2 {
+        display: flex;
+    }
+
+    main .introdirection .intro-right1 {
+        display: none;
+    }
+
+    main .introdirection .intro-left2{
+        display: flex;
+    }
+
+    main .introdirection .intro-left1 {
+        display: none;
     }
 
     .content1 {
         text-align: center;
         /* background: lightslategray; */
         /* margin-top: 10rem; */
-            padding: 4rem 0;
+            padding: 0rem 0;
             /* padding: 0 12.5rem; */
             /* position: relative; */
+            margin-left: 5.5rem;
+            margin-bottom: 4rem;
     }
 
     .content1 hr {
-        margin-left: 8rem;
+        margin-left: 3rem;
     }
 
     .content1 h3 {
@@ -560,39 +626,64 @@ footer .last-list ul li .las:hover {
     }
 
     .content2 {
-        /* margin: 0 1.5rem; */
-        margin-top: -.5rem;
-        background: #2c2640;
+        /* margin-left: 2.8rem; */
+        /* margin-right: 4em; */
+        margin-top: 10rem;
+        /* background: #2c2640; */
         height: 350px;
+        width: 350px;
+        text-align: center;
         text-align: center;
     }
 
-    .content2 .find {
+    .content2 .find-more {
         position: relative;
-        z-index: 1;
+        z-index: 2;
+        /* background-color: coral; */
+        top: -9.4rem;
     }
 
     .content2 .wav {
         position: relative;
-        z-index: 2;
+        z-index: 1;
         /* background: salmon; */
-        top: -16.8rem;
+        top: -19rem;
+        left: 2.5rem;
+        /* background-color: cornsilk; */
+    }
+
+    .content2 .how-we-work1 {
+        display: none;
     }
 
     .content2 .find {
         display: flex;
         flex-direction: column;
-        margin-bottom: -4rem;
+        /* margin-bottom: -4rem; */
         /* background: crimson; */
+        height: 346px;
+        width: 425px;
+        left: -8rem;
     }
 
     .content2 .find-more .findd {
         width: 100%;
-        padding-left: 3rem;
-        padding-right: 18rem;
-        padding-top: 2rem;
+        width: 425px;
         height: 300px;
+        font-size: 2rem;
+        left: 7rem;
+        top: 4rem;
         /* background: cyan; */
+        position: relative;
+        z-index: 4;
+    }
+
+    .content2 .find .how {
+        position: relative;
+        z-index: 2;
+        top: 4rem;
+        left: 1rem;
+        /* color: darkgreen; */
     }
 
     .content2 .find-more .how {
@@ -601,9 +692,11 @@ footer .last-list ul li .las:hover {
 
     .content2 .find-more .how p {
         /* background: #d3d3d3; */
+        font-size: 12px;
         /* height: 100px; */
         margin-left: 28rem;
-        top: -6rem;
+        margin-right: -15rem;
+        top: -7rem;
         right: 19.5rem;
         position: relative;
         border: 3px solid white;
@@ -615,16 +708,24 @@ footer .last-list ul li .las:hover {
     }
 
     footer {
-        margin-top: 4rem;
-        height: 1110px;
+        margin-top: -4rem;
+        height: 1300px;
+        width: 425px;
+    }
+    
+    footer .last-wave img {
+        width: 425px;
+        object-fit: contain;
     }
 
     footer .last-cont {
-        margin-right: 2rem;
+        /* margin-right: 2rem; */
+        /* background: cornflowerblue; */
     }
 
     footer .last-cont .last {
-        margin-left: -16rem;
+        width: 250px;
+        margin-left: -7rem;
         display: flex;
         flex-direction: column;
         /* background: yellow; */
@@ -656,11 +757,15 @@ footer .last-list ul li .las:hover {
         text-align: center;
         flex-direction: column;
         margin-left: -4rem;
+        /* background: darkcyan; */
+        width: 300px;
+        margin-left: -8rem;
     }
 
     .attribution {
-        margin-left: -16rem;
+        margin-top: -7rem;
+        /* margin-left: -16rem; */
+        width: 425px;
+        text-align: center;
     }
-
-
 }
