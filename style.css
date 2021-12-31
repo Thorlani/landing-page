@@ -148,8 +148,8 @@ main .intro .right {
     height: 500px;
     float: right;
     width: 50%;
-    padding-left: 10rem;
-    padding-top: 1.5rem;
+    /* padding-left: 2rem; */
+    padding-top: .8rem;
 }
 
 main .intro .right img {
@@ -400,7 +400,15 @@ footer .last-list ul li .las:hover {
 }
 
 
-@media (max-width: 475px) {
+@media (max-width: 425px) {
+    html, body {
+        width: 100%;
+        height: 100%;
+        margin: 0px;
+        padding: 0px;
+        overflow-x: hidden;
+    }
+
     nav {
         /* background-color: yellowgreen; */
         width: 420px;
@@ -412,6 +420,8 @@ footer .last-list ul li .las:hover {
 
     nav .toggle-button {
         display: flex;
+        position: static;
+        margin-right: 1rem;
     }
 
     nav .navbar-links {
@@ -516,7 +526,7 @@ footer .last-list ul li .las:hover {
         /* background: lightskyblue; */
         width: 418px;
         height: 425px;
-        margin-top: -18rem;
+        margin-top: -16rem;
         padding-left: 2.5rem;
         padding-right: 2.5rem;
         text-align: center;
@@ -604,6 +614,7 @@ footer .last-list ul li .las:hover {
 
     .content1 h3 {
         margin-left: -16.5rem;
+        font-size: 3.3rem;
     }
 
     .content1 ul {
@@ -718,10 +729,10 @@ footer .last-list ul li .las:hover {
         object-fit: contain;
     }
 
-    footer .last-cont {
-        /* margin-right: 2rem; */
-        /* background: cornflowerblue; */
-    }
+    /* footer .last-cont {
+        margin-right: 2rem;
+        background: cornflowerblue;
+    } */
 
     footer .last-cont .last {
         width: 250px;
